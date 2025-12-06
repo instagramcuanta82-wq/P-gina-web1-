@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Omegle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 class="status">Listo • Presiona Conectar</h2>
+
+<div class="video-box">
+    <h3>Tu cámara</h3>
+    <video id="localVideo" autoplay playsinline></video>
+</div>
+
+<div class="video-box">
+    <h3>Extraño</h3>
+    <video id="remoteVideo" autoplay playsinline></video>
+</div>
+
+<div class="btn-box">
+    <button id="connectBtn">Conectar</button>
+    <button id="nextBtn" disabled>Next</button>
+    <button id="leaveBtn" disabled>Salir</button>
+</div>
+
+<div class="chat-box">
+    <div id="messages"></div>
+
+    <div class="input-area">
+        <input id="messageInput" placeholder="Escribe..." />
+        <button id="sendBtn">Enviar</button>
+    </div>
+</div>
+
+<p class="server-info">
+    Servidor señalización: wss://omegle-f80m.onrender.com
+</p>
+
+<script src="script.js"></script>
+</body>
+</html>
